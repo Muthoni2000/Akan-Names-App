@@ -21,7 +21,20 @@
             <p class="p-text">Akan names are derived from Ghanian culture, whereby children are given their first name as a 'day name'<br>These "day names" are derived from the day of the week one was born.</p>
             <p class="q-text text-center"><strong>Know your Akan name</strong></p>
             <div class="jumbotron">
-              
+              <form>
+                <p> Year:<input type="text" name="year" placeholder="Enter Year of Birth(eg.2000)" required></p>
+                <p> Numeric Month:<input type="text" name="month" placeholder="Enter Month of Birth(1-12)" required></p>
+                <p> Day of Month:<input type="text" name="day" placeholder="Enter Day of Birth(1-31)" required></p>
+                <h4 class="field-header">Gender:</h4>
+               <div class="radio-buttons">
+                   <input type="radio" name="gender" value="male" id="maleRadio" />Male
+                   <input type="radio" name="gender" value="female" id="femaleRadio"/>Female                        
+               </div>
+                <p> <input type="button" value="Submit" onclick="compute(this.form)"> <input type="reset" value="clear"></p>
+                <p> Date of Birth:<input type="text" name="result1" size="18"></p>
+                <p> Day of the Week:<input type="text" name="result2" size="18"></p>
+                <p> Akan Name: <textarea name="result3" rows="2" cols="30"></textarea></p>
+            </form>
             </div>
         </div>
    </div>
